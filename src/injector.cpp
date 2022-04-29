@@ -37,6 +37,8 @@ DWORD find_process(const std::string &processName) {
 int main(int argc, char *argv[]) {
 	if (argc < 3) {
 		printf("%s\n", "usage: injector some.dll process.exe");
+
+        return EXIT_FAILURE;
 	}
 
 	LPVOID remote_mem;
